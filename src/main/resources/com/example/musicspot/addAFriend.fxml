@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#onScreenAction" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.musicspot.AddAFriend">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #deeff5;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="20.0" layoutY="109.0" prefHeight="27.0" prefWidth="160.0" text="Add friend" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Times New Roman" size="31.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#backButtonOnaction" prefHeight="26.0" prefWidth="22.0" styleClass="buttonBackWithImage" stylesheets="@styles.css" textFill="#0c7913" />
+            <Label alignment="CENTER" layoutX="49.0" layoutY="136.0" prefHeight="27.0" prefWidth="97.0" text="MusicSpot" textFill="#09283b">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Label>
+            <Circle fill="#1f93ff00" layoutX="100.0" layoutY="140.0" radius="86.0" stroke="BLACK" strokeType="INSIDE" />
+            <Line endX="100.0" layoutX="84.0" layoutY="140.0" startX="-68.9999771118164" startY="-7.62939453125E-6" />
+            <Button layoutX="73.0" layoutY="158.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="43.0" styleClass="buttonAddFriendWithImage" stylesheets="@styles.css" />
+            <Circle fx:id="circle" fill="DODGERBLUE" layoutX="98.0" layoutY="344.0" radius="66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="nameLabel" alignment="CENTER" layoutX="22.0" layoutY="410.0" prefHeight="43.0" prefWidth="156.0" text="Label" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+            <Circle fill="#0e898c" layoutX="98.0" layoutY="344.0" opacity="0.11" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="608.0" style="-fx-background-color: fbfcfa;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="cancelButton" layoutX="573.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="5.0" prefWidth="25.0" styleClass="buttonExitWithImage" stylesheets="@styles.css" textFill="RED" />
+            <ListView fx:id="listViewRequest" fixedCellSize="40.0" layoutX="300.0" layoutY="49.0" prefHeight="402.0" prefWidth="270.0" stylesheets="@listViewStyle.css">
+               <styleClass>
+                  <String fx:value="list-cell" />
+                  <String fx:value="list-view" />
+               </styleClass></ListView>
+            <Label layoutX="300.0" layoutY="10.0" prefHeight="34.0" prefWidth="254.0" text="Your request list:">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="409.0" layoutY="455.0" mnemonicParsing="false" onAction="#deleteButtonOnAction" prefHeight="37.0" prefWidth="46.0" styleClass="buttonDeclineWithImage" stylesheets="@styles.css" textFill="#e41b1b" />
+            <TextField fx:id="nameAccont" layoutX="14.0" layoutY="212.0" onAction="#clickOnFiled" onMouseClicked="#clickOnFiled" prefHeight="46.0" prefWidth="265.0" promptText="Insert UserName" styleClass="round-layout" stylesheets="@styles.css" />
+            <Button layoutX="228.0" layoutY="215.0" mnemonicParsing="false" onAction="#requestButton" prefHeight="40.0" prefWidth="41.0" styleClass="buttonAddFriendWithImage" stylesheets="@styles.css">
+               <font>
+                  <Font name="Agency FB" size="14.0" />
+               </font>
+            </Button>
+            <Separator layoutX="220.0" layoutY="213.0" orientation="VERTICAL" prefHeight="42.0" prefWidth="6.0" />
+            <Label fx:id="accontGLable" alignment="CENTER" layoutX="41.0" layoutY="307.0" prefHeight="60.0" prefWidth="210.0" textAlignment="CENTER" textFill="#107307">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="accontWLable" alignment="TOP_CENTER" layoutX="16.0" layoutY="109.0" prefHeight="79.0" prefWidth="258.0" textAlignment="CENTER" textFill="#fc0707" wrapText="true">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

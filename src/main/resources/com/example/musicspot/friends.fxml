@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#onScreenAction" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.musicspot.YourFirends">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #deeff5;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backButton" layoutX="1.0" mnemonicParsing="false" onAction="#backButtonOnaction" prefHeight="27.0" prefWidth="25.0" styleClass="buttonBackWithImage" stylesheets="@styles.css" textFill="#0c7913">
+               <font>
+                  <Font name="Agency FB" size="14.0" />
+               </font></Button>
+            <Circle fx:id="circle" fill="DODGERBLUE" layoutX="100.0" layoutY="341.0" radius="66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="nameLabel" alignment="CENTER" layoutX="20.0" layoutY="409.0" prefHeight="43.0" prefWidth="156.0" text="Label" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+            <Circle fill="#0e898c" layoutX="100.0" layoutY="340.0" opacity="0.11" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="53.0" layoutY="82.0" prefHeight="84.0" prefWidth="118.0" text="Friends">
+               <font>
+                  <Font name="Times New Roman" size="31.0" />
+               </font>
+            </Label>
+            <Circle fill="#1f93ff03" layoutX="98.0" layoutY="137.0" radius="86.0" stroke="BLACK" strokeType="INSIDE" />
+            <Line endX="76.0" layoutX="108.0" layoutY="137.0" startX="-96.0" />
+            <Label alignment="CENTER" layoutX="53.0" layoutY="130.0" prefHeight="30.0" prefWidth="93.0" text="MusicSpot" textFill="#09283b">
+               <font>
+                  <Font name="Agency FB" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="78.0" layoutY="164.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" styleClass="buttonFriendsWithImage" stylesheets="@styles.css" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="606.0" style="-fx-background-color: fbfcfa;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="cancelButton" layoutX="575.0" layoutY="-1.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="5.0" prefWidth="25.0" styleClass="buttonExitWithImage" stylesheets="@styles.css" textFill="RED">
+               <font>
+                  <Font name="Agency FB" size="14.0" />
+               </font></Button>
+            <ListView fx:id="listVirwYourRequest" fixedCellSize="40.0" layoutX="16.0" layoutY="47.0" prefHeight="320.0" prefWidth="230.0" stylesheets="@listViewStyle.css">
+               <styleClass>
+                  <String fx:value="list-cell" />
+                  <String fx:value="list-view" />
+               </styleClass></ListView>
+            <ListView fx:id="listVirwYourFriends" fixedCellSize="40.0" layoutX="337.0" layoutY="47.0" prefHeight="320.0" prefWidth="230.0" stylesheets="@listViewStyle.css">
+               <styleClass>
+                  <String fx:value="list-cell" />
+                  <String fx:value="list-view" />
+               </styleClass></ListView>
+            <Button layoutX="48.0" layoutY="370.0" mnemonicParsing="false" onAction="#acceptButtonOnAction" prefHeight="38.0" prefWidth="42.0" styleClass="buttonAcceptWithImage" stylesheets="@styles.css">
+               <font>
+                  <Font name="Agency FB" size="14.0" />
+               </font></Button>
+            <Button layoutX="152.0" layoutY="370.0" mnemonicParsing="false" onAction="#declineButtonOnAction" prefHeight="38.0" prefWidth="42.0" styleClass="buttonDeclineWithImage" stylesheets="@styles.css">
+               <font>
+                  <Font name="Agency FB" size="14.0" />
+               </font></Button>
+            <Label layoutX="16.0" layoutY="10.0" prefHeight="37.0" prefWidth="150.0" text="Friend request">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="337.0" layoutY="15.0" prefHeight="30.0" prefWidth="150.0" text="Friends">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="478.0" layoutY="371.0" mnemonicParsing="false" onAction="#deleteButtonOnAction" prefHeight="35.0" prefWidth="39.0" styleClass="buttonDeclineWithImage" stylesheets="@styles.css">
+               <font>
+                  <Font name="Agency FB" size="14.0" />
+               </font></Button>
+            <Button layoutX="386.0" layoutY="373.0" mnemonicParsing="false" onAction="#seePlaylistButtonOnAction" prefHeight="36.0" prefWidth="40.0" styleClass="buttonPlayListWithImage" stylesheets="@styles.css">
+               <font>
+                  <Font name="Agency FB" size="14.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

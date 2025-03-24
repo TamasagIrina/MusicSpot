@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#onScreenAction" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.musicspot.YourSongs">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="318.0" style="-fx-background-color: #deeff5;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backButton" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#backButtonOnaction" prefHeight="27.0" prefWidth="22.0" styleClass="buttonBackWithImage" stylesheets="@styles.css" textFill="#0c7913">
+               <font>
+                  <Font name="Agency FB" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+            <Label alignment="CENTER" layoutX="121.0" layoutY="84.0" prefHeight="35.0" prefWidth="83.0" text="MusicSpot" textFill="#09283b">
+               <font>
+                  <Font name="Agency FB" size="13.0" />
+               </font>
+            </Label>
+            <ListView fx:id="listViewSongs" fixedCellSize="40.0" layoutX="21.0" layoutY="257.0" prefHeight="216.0" prefWidth="283.0" stylesheets="@listViewStyle.css">
+               <styleClass>
+                  <String fx:value="list-cell" />
+                  <String fx:value="list-view" />
+               </styleClass></ListView>
+            <Label layoutX="124.0" layoutY="64.0" prefHeight="13.0" prefWidth="87.0" text="Playlist">
+               <font>
+                  <Font name="Times New Roman" size="25.0" />
+               </font>
+            </Label>
+            <Line endX="65.0" endY="-7.79998779296875" layoutX="175.0" layoutY="98.0" startX="-87.0" startY="-7.79998779296875" />
+            <Circle fill="#1f93ff03" layoutX="165.0" layoutY="91.0" radius="76.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="circle" fill="DODGERBLUE" layoutX="59.0" layoutY="186.0" radius="39.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#0e898c" layoutX="59.0" layoutY="186.0" opacity="0.11" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+            <Button layoutX="145.0" layoutY="118.0" minHeight="35.0" mnemonicParsing="false" prefWidth="35.0" styleClass="buttonPlayListWithImage" stylesheets="@styles.css" />
+            <HBox layoutX="22.0" layoutY="228.0" prefHeight="32.0" prefWidth="198.0">
+               <children>
+                  <Label fx:id="nameLabel" alignment="BOTTOM_LEFT" prefHeight="32.0" prefWidth="114.0" text="Name" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="30.0" prefWidth="56.0" text="playlist">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <BorderPane prefHeight="400.0" prefWidth="322.0" BorderPane.alignment="CENTER">
+         <top>
+            <AnchorPane prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: fbfcfa;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="cancelButton" layoutX="449.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="5.0" prefWidth="25.0" styleClass="buttonExitWithImage" stylesheets="@styles.css" textFill="RED">
+                     <font>
+                        <Font name="Agency FB" size="14.0" />
+                     </font></Button>
+                  <Label fx:id="songLabel" alignment="CENTER" layoutX="57.0" layoutY="28.0" prefHeight="43.0" prefWidth="381.0" textFill="#09283b">
+                     <font>
+                        <Font name="Times New Roman" size="38.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="songLabel1" alignment="CENTER" layoutX="86.0" layoutY="74.0" prefHeight="18.0" prefWidth="322.0" textFill="#09283b">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="133.0" prefWidth="483.0" style="-fx-background-color: fbfcfa;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="playButton" layoutX="208.0" layoutY="53.0" mnemonicParsing="false" onAction="#playMedia" prefHeight="50.0" prefWidth="53.0" styleClass="buttonPlayWithImage" stylesheets="@styles.css">
+                     <font>
+                        <Font name="Agency FB" size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pauseButton" layoutX="258.0" layoutY="61.0" mnemonicParsing="false" onAction="#pauseMedia" prefHeight="31.0" prefWidth="40.0" styleClass="buttonPauseWithImage" stylesheets="@styles.css">
+                     <font>
+                        <Font name="Agency FB" size="14.0" />
+                     </font></Button>
+                  <Button fx:id="priviosButton" layoutX="134.0" layoutY="61.0" mnemonicParsing="false" onAction="#priviesMedia" prefHeight="31.0" prefWidth="34.0" styleClass="buttonPrevWithImage" stylesheets="@styles.css">
+                     <font>
+                        <Font name="Agency FB" size="14.0" />
+                     </font></Button>
+                  <Button fx:id="nextButton" layoutX="331.0" layoutY="61.0" mnemonicParsing="false" onAction="#nextMedia" prefHeight="31.0" prefWidth="48.0" styleClass="buttonNextWithImage" stylesheets="@styles.css">
+                     <font>
+                        <Font name="Agency FB" size="14.0" />
+                     </font></Button>
+                  <ComboBox fx:id="speedBox" layoutX="391.0" layoutY="27.0" onAction="#changeSpeed" prefHeight="31.0" prefWidth="77.0" promptText="SPEED" styleClass="button" stylesheets="@styles.css" />
+                  <Button fx:id="resetButton" layoutX="43.0" layoutY="61.0" mnemonicParsing="false" onAction="#resetMedia" prefHeight="31.0" prefWidth="30.0" styleClass="buttonResetWithImage" stylesheets="@styles.css">
+                     <font>
+                        <Font name="Agency FB" size="14.0" />
+                     </font></Button>
+                  <ProgressBar fx:id="songProgresBar" layoutX="28.0" layoutY="4.0" prefHeight="20.0" prefWidth="427.0" progress="0.0" styleClass="custom-progress-bar" stylesheets="@styles.css" />
+                  <Label fx:id="progresTime" layoutY="7.0" prefHeight="14.0" prefWidth="27.0">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="endTime" layoutX="454.0" layoutY="7.0" prefHeight="18.0" prefWidth="26.0" />
+               </children>
+            </AnchorPane>
+         </bottom>
+         <right>
+            <AnchorPane prefHeight="300.0" prefWidth="483.0" style="-fx-background-color: fbfcfa;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="songImage" blendMode="SRC_ATOP" fitHeight="185.0" fitWidth="232.0" layoutX="126.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <Reflection fraction="0.71" topOpacity="0.65" />
+                     </effect></ImageView>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </right>
+</BorderPane>

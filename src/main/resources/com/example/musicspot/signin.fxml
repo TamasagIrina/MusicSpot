@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.musicspot.SigninController">
+    <left>
+        <AnchorPane prefHeight="500.0" prefWidth="312.0" style="-fx-background-color: #deeff5;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" layoutX="49.0" layoutY="147.0" prefHeight="57.0" prefWidth="230.0" text="Music Spot" textFill="#7193ab">
+                    <font>
+                        <Font name="Times New Roman Bold" size="40.0" />
+                    </font>
+                </Label>
+                <Line endX="185.0" endY="24.0" layoutX="104.0" layoutY="171.0" startX="-78.39999389648438" startY="24.0" stroke="#7193ab" />
+                <Circle fill="#09283b00" layoutX="157.0" layoutY="195.0" radius="133.0" stroke="#7193ab" strokeType="INSIDE" />
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="500.0" prefWidth="498.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" layoutX="137.0" layoutY="59.0" prefHeight="18.0" prefWidth="176.0" text="Signin " textFill="#7193ab">
+                    <font>
+                        <Font name="Times New Roman Bold" size="30.0" />
+                    </font>
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                </Label>
+                <Label layoutX="75.0" layoutY="216.0" text="Username">
+                    <font>
+                        <Font name="Times New Roman" size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="75.0" layoutY="260.0" text="Password">
+                    <font>
+                        <Font name="Times New Roman" size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="firstNameTextFild" layoutX="158.0" layoutY="122.0" prefHeight="30.0" prefWidth="200.0" promptText="FirstName" styleClass="round-layout" stylesheets="@styles.css">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></TextField>
+                <PasswordField fx:id="passwordField" layoutX="158.0" layoutY="256.0" prefHeight="30.0" prefWidth="200.0" promptText="Password" styleClass="round-layout" stylesheets="@styles.css">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></PasswordField>
+                <Button fx:id="signinButton" layoutX="72.0" layoutY="325.0" mnemonicParsing="false" onAction="#signinButtonOnAction" prefHeight="30.0" prefWidth="300.0" styleClass="round-layout" stylesheets="@styles.css" text="Signin" textFill="#7193ab">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font></Button>
+                <Button fx:id="backButton" layoutX="75.0" layoutY="375.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="30.0" prefWidth="300.0" styleClass="round-layout" stylesheets="@styles.css" text="Back" textFill="#7193ab">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font></Button>
+                <Label fx:id="signinMassegLabel" alignment="CENTER" layoutX="89.0" layoutY="93.0" prefHeight="18.0" prefWidth="266.0" textFill="#e40b0b">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Label>
+            <Label layoutX="75.0" layoutY="170.0" text="Last Name">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastNameTextFild" layoutX="158.0" layoutY="164.0" prefHeight="30.0" prefWidth="200.0" promptText="LastName" styleClass="round-layout" stylesheets="@styles.css">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></TextField>
+            <Label layoutX="75.0" layoutY="126.0" text="First Name">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextFild" layoutX="158.0" layoutY="213.0" prefHeight="30.0" prefWidth="200.0" promptText="Username" styleClass="round-layout" stylesheets="@styles.css">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></TextField>
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>

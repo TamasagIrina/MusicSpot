@@ -1,0 +1,110 @@
+
+.round-layout{
+    -fx-border-radius: 50;
+    -fx-border-color: #7193ab;
+    -fx-background-color: rgba(0,0,0,0);
+}
+.button{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+
+.custom-progress-bar {
+    -fx-background-color: #deeff5;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 5;
+    -fx-min-height: 20px;
+}
+.buttonPlayWithImage {
+    -fx-background-image: url('play-button.png');
+    -fx-background-size: 38px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}
+.buttonPauseWithImage {
+    -fx-background-image: url('pause-button.png');
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}
+.buttonNextWithImage {
+     -fx-background-image: url('forward.png');
+     -fx-background-size: 30px;
+     -fx-background-repeat: no-repeat;
+     -fx-background-position: 90%;
+ }
+.buttonPrevWithImage {
+      -fx-background-image: url('previous.png');
+      -fx-background-size: 30px;
+      -fx-background-repeat: no-repeat;
+      -fx-background-position: 90%;
+  }
+.buttonResetWithImage {
+    -fx-background-image: url('refresh.png');
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}
+.buttonAddListWithImage {
+    -fx-background-image: url('add-list.png');
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}
+.buttonLogOutWithImage {
+    -fx-background-image: url('logOut.png');
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}
+.buttonExitWithImage {
+    -fx-background-image: url('close.png');
+    -fx-background-size: 20px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}
+.buttonFriendsWithImage {
+    -fx-background-image: url('friends.png');
+    -fx-background-size: 35px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}
+.buttonAddFriendWithImage {
+    -fx-background-image: url('add-user.png');
+    -fx-background-size: 35px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}
+.buttonPlayListWithImage {
+    -fx-background-image: url('playlist.png');
+    -fx-background-size: 35px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}
+.buttonLoopWithImage {
+    -fx-background-image: url('loop.png');
+    -fx-background-size: 20px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}
+.buttonBackWithImage {
+    -fx-background-image: url('BACK.png');
+    -fx-background-size: 20px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}
+.buttonAcceptWithImage {
+    -fx-background-image: url('accept.png');
+    -fx-background-size: 35px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}.buttonDeclineWithImage {
+     -fx-background-image: url('decline.png');
+     -fx-background-size: 35px;
+     -fx-background-repeat: no-repeat;
+     -fx-background-position: 90%;
+ }
+
+
+
