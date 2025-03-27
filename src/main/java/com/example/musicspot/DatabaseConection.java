@@ -77,7 +77,7 @@ public class DatabaseConection {
 
         String insert= "INSERT INTO "+database+" (idUserAccounts , friend_name)\n" +
                 "VALUES ("+id+", \""+name_friend+"\");";
-        System.out.println(insert);
+
         Statement statement= connectDB.createStatement();
         statement.execute(insert);
 
