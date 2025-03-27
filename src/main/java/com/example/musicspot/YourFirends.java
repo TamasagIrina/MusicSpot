@@ -118,8 +118,9 @@ public class YourFirends implements Initializable {
 
         if(selected!=null){
             DatabaseConection connectNow = new DatabaseConection();
-            int id = connectNow.getID(name);
-            if(connectNow.verifyIsAccountExistDataBase(selected, "friendsrequest","friend_name", id)){
+            int id = connectNow.getID(selected);
+
+            if(connectNow.verifyIsAccountExistDataBase(name, "friendsrequest","friend_name", id)){
                 connectNow.addInDatabase(selected,connectNow.getID(name),"friends");
                 connectNow.addInDatabase(name,connectNow.getID(selected),"friends");
 
