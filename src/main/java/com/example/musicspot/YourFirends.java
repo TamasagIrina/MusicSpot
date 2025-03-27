@@ -70,7 +70,7 @@ public class YourFirends implements Initializable {
                 listVirwYourFriends.getItems().add(friend);
             }
             for (Integer idFriend : idRequestFriend) {
-                String name = conection.getname(idFriend);
+                String name = conection.getName(idFriend);
                 listVirwYourRequest.getItems().add(name);
             }
 

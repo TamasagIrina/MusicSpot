@@ -39,12 +39,12 @@ public class LoginController implements Initializable {
     }
 
     @FXML
-    private void signinButtonOnAction(ActionEvent e) throws IOException {
+    private void signingButtonOnAction(ActionEvent e) throws IOException {
         SwitchTo s= new SwitchTo();
         s.switchToScreen(e, "signin.fxml");
     }
 
-    public void logingButtonOnAction(ActionEvent e) throws IOException {
+    public void loginButtonOnAction(ActionEvent e) throws IOException {
        if(!usernameTextFild.getText().isBlank() && !passwordField.getText().isBlank()){
            validateLogin(e);
        }else {

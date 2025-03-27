@@ -46,7 +46,7 @@
                <font>
                   <Font name="Times New Roman" size="14.0" />
                </font></PasswordField>
-            <Button fx:id="loginButton" layoutX="70.0" layoutY="281.0" mnemonicParsing="false" onAction="#logingButtonOnAction" prefHeight="30.0" prefWidth="300.0" styleClass="round-layout" stylesheets="@styles.css" text="Login" textFill="#7193ab">
+            <Button fx:id="loginButton" layoutX="70.0" layoutY="281.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="30.0" prefWidth="300.0" styleClass="round-layout" stylesheets="@styles.css" text="Login" textFill="#7193ab">
                <font>
                   <Font name="Times New Roman" size="15.0" />
                </font></Button>
@@ -59,7 +59,7 @@
                   <Font size="10.0" />
                </font>
             </Label>
-            <Button fx:id="signinButton" layoutX="70.0" layoutY="329.0" mnemonicParsing="false" onAction="#signinButtonOnAction" prefHeight="30.0" prefWidth="300.0" styleClass="round-layout" text="Signin" textFill="#7193ab">
+            <Button fx:id="signinButton" layoutX="70.0" layoutY="329.0" mnemonicParsing="false" onAction="#signingButtonOnAction" prefHeight="30.0" prefWidth="300.0" styleClass="round-layout" text="Signin" textFill="#7193ab">
                <font>
                   <Font name="Times New Roman" size="15.0" />
                </font>

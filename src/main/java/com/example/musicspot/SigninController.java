@@ -37,7 +37,7 @@ public class SigninController {
                 if(connectNow.exitInDatabase(usernameTextFild.getText(), passwordField.getText())) {
                     signinMassegLabel.setText("The account already exist. Go to login");
                 }else {
-                    intertInDataBase(event);
+                    insertInDataBase(event);
                     SwitchTo s= new SwitchTo();
                     s.switchToScreen(event, "music.fxml");
                 }
@@ -56,7 +56,7 @@ public class SigninController {
     }
 
     @FXML
-    private void intertInDataBase(ActionEvent e) throws SQLException {
+    private void insertInDataBase(ActionEvent e) throws SQLException {
         DatabaseConection connectNow = new DatabaseConection();
         Connection connectDB=connectNow.getConnection();
 

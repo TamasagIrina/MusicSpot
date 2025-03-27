@@ -51,7 +51,7 @@ public class DatabaseConection {
 
         String verify="SELECT count(1) FROM "+database+" WHERE "+calom+" = '"+name+"' AND  idUserAccounts="+id+";";
 
-        try {
+        try{
 
             Statement statement= connectDB.createStatement();
             ResultSet queryResut = statement.executeQuery(verify);
@@ -121,7 +121,7 @@ public class DatabaseConection {
         return generatedKey;
     }
 
-    public String getname(int id) throws SQLException {
+    public String getName(int id) throws SQLException {
         Connection connectDB= getConnection();
 
         String getId="SELECT UserName FROM useraccounts WHERE idUserAccounts="+id+";";
